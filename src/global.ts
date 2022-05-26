@@ -1,5 +1,4 @@
-import { NodeLoader } from '@codecb/node-loader';
-import { ImportMapInput, ImportMapResult } from './types';
+import type { ImportMapInput, ImportMapResult } from './types.js';
 
 declare module '@codecb/node-loader' {
   interface NodeLoader {
@@ -7,8 +6,4 @@ declare module '@codecb/node-loader' {
       newImportMapPromise: Promise<ImportMapInput>,
     ) => Promise<ImportMapResult>;
   }
-}
-
-declare global {
-  var nodeLoader: NodeLoader;
 }

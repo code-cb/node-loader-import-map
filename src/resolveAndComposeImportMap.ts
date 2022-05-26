@@ -1,5 +1,5 @@
-import { ImportsResult, ScopesResult } from './types';
-import { getDefaultBaseUrl, parseUrlLikeImportSpecifier } from './utils';
+import type { ImportsResult, ScopesResult } from './types.js';
+import { getDefaultBaseUrl, parseUrlLikeImportSpecifier } from './utils.js';
 
 function assertPlainObject(
   obj: unknown,

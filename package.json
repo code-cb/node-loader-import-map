@@ -1,28 +1,31 @@
 {
   "name": "@codecb/node-loader-import-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "rollup -c rollup.config.ts --configPlugin rollup-plugin-ts",
-    "build:watch": "yarn build -w",
-    "format": "prettier --write 'src/**/*.ts'"
+    "build": "rm -rf dist && tsc -p ./tsconfig.json",
+    "build:watch": "yarn build --declarationMap --sourceMap --watch",
+    "format": "prettier --write 'src/**/*.ts'",
+    "prepublishOnly": "yarn build",
+    "typecheck": "tsc --noEmit"
   },
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
-    "@codecb/node-loader": "^0.0.1",
-    "@codecb/tsconfigs": "^0.0.2",
+    "@codecb/node-loader": "^0.0.5",
+    "@codecb/tsconfigs": "^0.0.3",
     "@types/node": "^16.11.36",
     "prettier": "^2.6.2",
-    "rollup": "^2.73.0",
-    "rollup-plugin-ts": "2.0.7",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   },
   "engines": {
-    "node": "16.13.1"
+    "node": ">=16.13.0"
   }
 }

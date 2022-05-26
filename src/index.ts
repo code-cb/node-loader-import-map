@@ -1,12 +1,12 @@
 import { NodeLoader, ResolveHook } from '@codecb/node-loader';
 import { readFile } from 'node:fs/promises';
 import { resolve as pathResolve } from 'node:path';
-import { resolveAndComposeImportMap } from './resolveAndComposeImportMap';
-import { resolveModuleSpecifier } from './resolveModuleSpecifier';
-import { ImportMapResult } from './types';
+import { resolveAndComposeImportMap } from './resolveAndComposeImportMap.js';
+import { resolveModuleSpecifier } from './resolveModuleSpecifier.js';
+import { ImportMapResult } from './types.js';
 
-export * from './global';
-export type { ImportMapInput, ImportMapResult } from './types';
+export type {} from './global.js';
+export type { ImportMapInput, ImportMapResult } from './types.js';
 
 const readImportMapFile = async () => {
   const relativePath = process.env.IMPORT_MAP_PATH || 'node.importmap';

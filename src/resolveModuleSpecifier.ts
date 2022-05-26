@@ -1,6 +1,6 @@
 import { sep } from 'node:path';
-import { ImportMapResult, ImportsResult, ScopesResult } from './types';
-import { getDefaultBaseUrl, parseUrlLikeImportSpecifier } from './utils';
+import type { ImportMapResult, ImportsResult, ScopesResult } from './types.js';
+import { getDefaultBaseUrl, parseUrlLikeImportSpecifier } from './utils.js';
 
 const getBaseUrl = (parentUrl: string | undefined) => {
   if (parentUrl) {

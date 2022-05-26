@@ -1,9 +1,7 @@
 {
   "extends": "@codecb/tsconfigs/tsconfig.node-lib",
   "compilerOptions": {
-    "module": "ESNext",
-    "declarationMap": true,
-    "removeComments": true
+    "outDir": "dist"
   },
   "include": ["src"]
 }
