@@ -2,27 +2,32 @@
 # yarn lockfile v1
 
 
-"@codecb/node-loader@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.5.tgz#030d5e1d6024b4212e5d530b32b1f987c5ac63ac"
-  integrity sha512-3m9v9yAZCQ5iPYhcZsZjsBIjkS8C+r29ZDlY8LJ/Vwbeco6s7P5xwaVdGbcevUmM6nL9iCXrVMsFA1tCSSiNRQ==
+"@codecb/node-loader@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.6.tgz#9922f5537a730698e6d83202daf6fcd93b635f9a"
+  integrity sha512-R9JJXXfF69FNM8HQ/daAwj8xSeTJLIj5ijJQ/NlCvGlyQGa34Vi4h4GfRym7n3G3S4M4gzfpuWb8c8z5kD1o8A==
 
-"@codecb/tsconfigs@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/@codecb/tsconfigs/-/tsconfigs-0.0.3.tgz#b688733b760c43b6715d85797414d2d71f8622df"
-  integrity sha512-jcy4YmxFIXwiu5wATWqgwZEzVrGYembBhFmbYvHVZzCGxPNdAOPa9U1R8oP3sccEJ8b/kDzOx0QRnUlQLQ2JoA==
+"@codecb/prettierrc@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@codecb/prettierrc/-/prettierrc-0.0.1.tgz#11cf15436b9a2ce36b632a39b877df85c2fa4364"
+  integrity sha512-yWsYW1SJEJ49i2E8R10R6a73jvFc5FfuwzNR6PQnCgKrs3fa3lf8fEhsSNaTefw+jTWPLOU4EjBJAgQ24c/mmA==
 
-"@types/node@^16.11.36":
-  version "16.11.36"
-  resolved "https://registry.npmjs.org/@types/node/-/node-16.11.36.tgz#9ab9f8276987132ed2b225cace2218ba794fc751"
-  integrity sha512-FR5QJe+TaoZ2GsMHkjuwoNabr+UrJNRr2HNOo+r/7vhcuntM6Ee/pRPOnRhhL2XE9OOvX9VLEq+BcXl3VjNoWA==
+"@codecb/tsconfigs@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@codecb/tsconfigs/-/tsconfigs-0.0.8.tgz#461e32a57932bcccf6b4d0e59946986a35a2eb53"
+  integrity sha512-Um3zFnyUeg7XO7dYOpo0j0wx41otAl1ezer6vjHhhQrYjb/rev2cSEwplq+16YfGcFx0UPg2twYNXP4NRIOOeQ==
 
-prettier@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
+"@types/node@^18.0.6":
+  version "18.0.6"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.0.6.tgz#0ba49ac517ad69abe7a1508bc9b3a5483df9d5d7"
+  integrity sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==
 
-typescript@^4.7.2:
-  version "4.7.2"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.7.2.tgz#1f9aa2ceb9af87cca227813b4310fff0b51593c4"
-  integrity sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==
+prettier@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
+
+typescript@^4.7.4:
+  version "4.7.4"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
+  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==

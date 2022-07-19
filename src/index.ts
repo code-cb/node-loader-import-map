@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve as pathResolve } from 'node:path';
 import { resolveAndComposeImportMap } from './resolveAndComposeImportMap.js';
 import { resolveModuleSpecifier } from './resolveModuleSpecifier.js';
-import { ImportMapResult } from './types.js';
+import { ImportMapResult, SetImportMapPromise } from './types.js';
 
 export type {} from './global.js';
 export type { ImportMapInput, ImportMapResult } from './types.js';
@@ -39,11 +39,7 @@ const getImportMapPromise = async (): Promise<ImportMapResult> => {
 
 let importMapPromise = getImportMapPromise();
 
-export const resolve: ResolveHook = async (
-  specifier,
-  context,
-  defaultResolve,
-) => {
+export const resolve: ResolveHook = async (specifier, context, nextResolve) => {
   const importMap = await importMapPromise;
   const importMapUrl = resolveModuleSpecifier(
     importMap,
@@ -51,10 +47,12 @@ export const resolve: ResolveHook = async (
     context.parentURL,
   );
   return importMapUrl
-    ? { url: importMapUrl }
-    : defaultResolve(specifier, context, defaultResolve);
+    ? { shortCircuit: true, url: importMapUrl }
+    : nextResolve(specifier, context, nextResolve);
 };
 
-global.nodeLoader ||= {} as NodeLoader;
-global.nodeLoader.setImportMapPromise = newImportMapPromise =>
+export const setImportMapPromise: SetImportMapPromise = newImportMapPromise =>
   (importMapPromise = newImportMapPromise.then(resolveAndComposeImportMap));
+
+global.nodeLoader ||= {} as NodeLoader;
+global.nodeLoader.setImportMapPromise = setImportMapPromise;

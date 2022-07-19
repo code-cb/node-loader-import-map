@@ -13,3 +13,7 @@ export interface ImportMapResult {
   imports: ImportsResult;
   scopes: ScopesResult;
 }
+
+export type SetImportMapPromise = (
+  newImportMapPromise: Promise<ImportMapInput>,
+) => Promise<ImportMapResult>;

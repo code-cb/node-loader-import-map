@@ -1,6 +1,6 @@
 {
   "name": "@codecb/node-loader-import-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -19,12 +19,14 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
-    "@codecb/node-loader": "^0.0.5",
-    "@codecb/tsconfigs": "^0.0.3",
-    "@types/node": "^16.11.36",
-    "prettier": "^2.6.2",
-    "typescript": "^4.7.2"
+    "@codecb/node-loader": "^0.0.6",
+    "@codecb/prettierrc": "0.0.1",
+    "@codecb/tsconfigs": "^0.0.8",
+    "@types/node": "^18.0.6",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   },
+  "prettier": "@codecb/prettierrc",
   "engines": {
     "node": ">=16.13.0"
   }

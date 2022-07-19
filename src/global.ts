@@ -1,9 +1,7 @@
-import type { ImportMapInput, ImportMapResult } from './types.js';
+import type { SetImportMapPromise } from './types.js';
 
 declare module '@codecb/node-loader' {
   interface NodeLoader {
-    setImportMapPromise: (
-      newImportMapPromise: Promise<ImportMapInput>,
-    ) => Promise<ImportMapResult>;
+    setImportMapPromise: SetImportMapPromise;
   }
 }
