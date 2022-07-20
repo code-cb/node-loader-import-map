@@ -48,7 +48,7 @@ export const resolve: ResolveHook = async (specifier, context, nextResolve) => {
   );
   return importMapUrl
     ? { shortCircuit: true, url: importMapUrl }
-    : nextResolve(specifier, context, nextResolve);
+    : nextResolve(specifier, context);
 };
 
 export const setImportMapPromise: SetImportMapPromise = newImportMapPromise =>

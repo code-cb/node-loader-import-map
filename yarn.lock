@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@codecb/node-loader@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.6.tgz#9922f5537a730698e6d83202daf6fcd93b635f9a"
-  integrity sha512-R9JJXXfF69FNM8HQ/daAwj8xSeTJLIj5ijJQ/NlCvGlyQGa34Vi4h4GfRym7n3G3S4M4gzfpuWb8c8z5kD1o8A==
+"@codecb/node-loader@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.7.tgz#c1016e064f2eb54eb3922add6d9df120b7968327"
+  integrity sha512-jH/JoMGjD0f6Xxvc2uZkv6Ur0o52uTu+N3vb26uibbXutIar16fc/NOHmChJnrRemn8l+gFYrYURMpA7a7hAFQ==
 
 "@codecb/prettierrc@0.0.1":
   version "0.0.1"
