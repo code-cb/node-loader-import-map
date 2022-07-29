@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@codecb/node-loader@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.7.tgz#c1016e064f2eb54eb3922add6d9df120b7968327"
-  integrity sha512-jH/JoMGjD0f6Xxvc2uZkv6Ur0o52uTu+N3vb26uibbXutIar16fc/NOHmChJnrRemn8l+gFYrYURMpA7a7hAFQ==
+"@codecb/node-loader@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@codecb/node-loader/-/node-loader-0.0.8.tgz#bc394cb6f21c8ff3df027b4b60cc183bfc152ae3"
+  integrity sha512-U5xHA0aJptm05c1zEF4exQQwR+Zg2VGZhwwHSWCo0DPaEy5Ea7aF6/W2gGkJ2PrSNTFcuAhixZY/E6a7snhcJg==
 
 "@codecb/prettierrc@0.0.1":
   version "0.0.1"
@@ -17,10 +17,10 @@
   resolved "https://registry.npmjs.org/@codecb/tsconfigs/-/tsconfigs-0.0.8.tgz#461e32a57932bcccf6b4d0e59946986a35a2eb53"
   integrity sha512-Um3zFnyUeg7XO7dYOpo0j0wx41otAl1ezer6vjHhhQrYjb/rev2cSEwplq+16YfGcFx0UPg2twYNXP4NRIOOeQ==
 
-"@types/node@^18.0.6":
-  version "18.0.6"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.0.6.tgz#0ba49ac517ad69abe7a1508bc9b3a5483df9d5d7"
-  integrity sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==
+"@types/node@^18.6.1":
+  version "18.6.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.6.1.tgz#828e4785ccca13f44e2fb6852ae0ef11e3e20ba5"
+  integrity sha512-z+2vB6yDt1fNwKOeGbckpmirO+VBDuQqecXkgeIqDlaOtmKn6hPR/viQ8cxCfqLU4fTlvM3+YjM367TukWdxpg==
 
 prettier@^2.7.1:
   version "2.7.1"
